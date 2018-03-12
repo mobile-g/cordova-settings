@@ -15,10 +15,12 @@ import android.content.Context;
 import android.net.Uri;
 
 import android.provider.Settings;
+import android.view.inputmethod.InputMethodManager;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.PluginResult;
+
 
 public class NativeSettings extends CordovaPlugin {
 
