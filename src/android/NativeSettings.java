@@ -131,8 +131,7 @@ public class NativeSettings extends CordovaPlugin {
             InputMethodManager mgr = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
             if (mgr != null) {
             mgr.showInputMethodPicker();
-        }
-        { else {
+        } else {
              status = PluginResult.Status.INVALID_ACTION;
         }
         
