@@ -128,9 +128,10 @@ public class NativeSettings extends CordovaPlugin {
         } else if (action.equals("wireless")) {
             this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_WIRELESS_SETTINGS));
         } else if (action.equals("gd")) {
-            android.view.inputmethod.InputMethodManager imm = (android.view.inputmethod.InputMethodManager) getActivity().getSystemService(android.content.Context.INPUT_METHOD_SERVICE);            
+            InputMethodManager imm = (InputMethodManager) cordova.getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);            
             if (imm != null) {
             imm.showInputMethodPicker();
+            }
         } else {
              status = PluginResult.Status.INVALID_ACTION;
         }
