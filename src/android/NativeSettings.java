@@ -130,7 +130,7 @@ public class NativeSettings extends CordovaPlugin {
         } else if (action.equals("gd")) {
             cordova.getThreadPool().execute(new Runnable() {
                 public void run() {
-            (InputMethodManager) cordova.getActivity().getSystemService(Context.INPUT_METHOD_SERVICE).showInputMethodPicker(); 
+            ((InputMethodManager) cordova.getActivity().getSystemService(Context.INPUT_METHOD_SERVICE).showInputMethodPicker()); 
                }
              });
         } else {
